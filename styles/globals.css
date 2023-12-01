@@ -22,5 +22,14 @@
 }
 
 .inactive-link-text {
-  @apply  text-spotify-inactive-link-gray hover:text-white hover:cursor-pointer;
+  @apply text-spotify-inactive-link-gray hover:text-white hover:cursor-pointer;
+}
+
+.menu-text {
+  @apply text-mid-gray font-semibold tracking-widest hover:text-white hover:cursor-pointer;
+}
+ 
+
+.vertical-separator{
+  @apply border border-white h-8 mx-3; 
 }

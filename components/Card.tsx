@@ -11,7 +11,7 @@ const Card = ({ title, description, buttonText }: CardProps) => {
     <div className=" flex flex-col light-card items-start">
       <span className="font-semibold text-lg">{title}</span>
       <span className=" text-md">{description}</span>
-      <Button text={buttonText} />
+      <Button text={buttonText} type="secondary" />
     </div>
   );
 };
