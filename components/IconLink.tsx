@@ -18,10 +18,10 @@ const IconLink = ({
       className={`flex align-middle items-center gap-4 ${
         isActive
           ? "text-white"
-          : " text-spotify-inactive-link-gray hover:text-white hover:cursor-pointer"
+          : "inactive-link-text"
       }`}
     >
-      <span className="text-2xl">
+      <span className="text-3xl">
         {isActive ? <ActiveIcon /> : <InactiveIcon />}
       </span>
       <span className="text-md font-semibold ">{text}</span>

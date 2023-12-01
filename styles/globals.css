@@ -6,13 +6,21 @@
     color: white;
 } */
 
-.debug{
-    border: 1px solid red;
+.debug {
+  border: 1px solid red;
 }
 
-.dark-card{
-    @apply bg-spotify-gray rounded-lg shadow-lg p-4; 
+.dark-card {
+  @apply bg-spotify-gray rounded-lg shadow-lg p-5;
 }
-.light-card{
-    @apply bg-spotify-card-dark-gray rounded-lg shadow-lg p-4 gap-3; 
+.light-card {
+  @apply bg-spotify-card-dark-gray rounded-lg shadow-lg p-5 gap-3;
+}
+
+.dDJltW {
+  @apply fill-white;
+}
+
+.inactive-link-text {
+  @apply  text-spotify-inactive-link-gray hover:text-white hover:cursor-pointer;
 }

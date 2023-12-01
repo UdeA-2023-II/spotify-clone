@@ -1,4 +1,3 @@
-import { Button } from "./Button";
 import { IconLink } from "./IconLink";
 import {
   MdHomeFilled,
@@ -6,15 +5,18 @@ import {
   MdOutlineSavedSearch,
   MdOutlineHome,
   MdVerticalSplit,
-  MdPlaylistAdd,
 } from "react-icons/md";
 import { AiOutlinePlus } from "react-icons/ai";
 import { Card } from "./Card";
+import { SpotifyLogo } from "./SpotifyLogo";
 
 const Sidebar = () => {
   return (
-    <aside className="debug w-[450px] p-2 flex flex-col gap-2">
-      <div className="debug dark-card flex flex-col gap-4">
+    <aside className=" w-[450px] p-2 flex flex-col gap-2">
+      <div className=" dark-card flex flex-col gap-4">
+        <div className="p-1">
+          <SpotifyLogo />
+        </div>
         <IconLink
           isActive
           text="Home"
@@ -27,7 +29,7 @@ const Sidebar = () => {
           InactiveIcon={MdOutlineSavedSearch}
         />
       </div>
-      <div className="debug h-full dark-card flex flex-col gap-6">
+      <div className=" h-full dark-card flex flex-col gap-6">
         <div className="flex items-center justify-between">
           <div className="flex gap-4  items-center  text-spotify-inactive-link-gray hover:text-white hover:cursor-pointer">
             <MdVerticalSplit className="text-2xl" />

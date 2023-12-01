@@ -8,7 +8,7 @@ interface CardProps {
 
 const Card = ({ title, description, buttonText }: CardProps) => {
   return (
-    <div className="debug flex flex-col light-card items-start">
+    <div className=" flex flex-col light-card items-start">
       <span className="font-semibold text-lg">{title}</span>
       <span className=" text-md">{description}</span>
       <Button text={buttonText} />
