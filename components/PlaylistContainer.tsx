@@ -6,7 +6,7 @@ interface PlaylistContainerProps {
 
 const PlaylistContainer = ({ title }: PlaylistContainerProps) => {
   return (
-    <section className="debug flex flex-col gap-4">
+    <section className="debug flex flex-col p-3 gap-4">
       <div className="flex justify-between ">
         <span className="text-white font-bold text-2xl">{title}</span>
         <span className="text-sm text-spotify-gray2 ">Show All</span>
