@@ -13,6 +13,11 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      colors: {
+        'spotify-gray': '#121212',
+        'spotify-inactive-link-gray': '#B3B3B3',
+        'spotify-card-dark-gray': '#242424',
+      },
     },
   },
   plugins: [],
