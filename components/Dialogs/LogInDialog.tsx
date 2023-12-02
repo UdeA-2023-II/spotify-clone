@@ -7,9 +7,17 @@ interface LogInDialogProps {
   setDialogOpen: Dispatch<SetStateAction<boolean>>;
 }
 
-const LogInDialog = ({ dialogOpen, setDialogOpen: setOpen }: LogInDialogProps) => {
+const LogInDialog = ({
+  dialogOpen,
+  setDialogOpen: setOpen,
+}: LogInDialogProps) => {
   return (
-    <Dialog open={dialogOpen} onClose={()=>{setOpen(false)}}>
+    <Dialog
+      open={dialogOpen}
+      onClose={() => {
+        setOpen(false);
+      }}
+    >
       <DialogTitle className="bg-mid-gray">
         <span>Diálogo de Log In</span>
       </DialogTitle>
