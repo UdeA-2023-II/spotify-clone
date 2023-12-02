@@ -11,11 +11,11 @@ const LogInDialog = ({ dialogOpen, setDialogOpen: setOpen }: LogInDialogProps) =
   return (
     <Dialog open={dialogOpen} onClose={()=>{setOpen(false)}}>
       <DialogTitle className="bg-mid-gray">
-        <span>Título del Diálogo</span>
+        <span>Diálogo de Log In</span>
       </DialogTitle>
       <DialogContent className="bg-mid-gray">
         <div className="flex flex-col gap-2">
-          <span>Contenido del Diálogo</span>
+          <span>Contenido del Diálogo de Log In</span>
 
           <div className="flex gap-2 justify-center">
             <Button
