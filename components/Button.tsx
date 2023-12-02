@@ -1,11 +1,17 @@
 interface ButtonProps {
   text: string;
   type: "primary" | "secondary";
+  handleClick?: () => void;
 }
 
-const Button = ({ text, type }: ButtonProps) => {
+const Button = ({ text, type, handleClick }: ButtonProps) => {
   return (
-    <button className={`bg-white ${type==='primary'? 'px-8 py-2 font-bold':'px-3 py-1 font-semibold'} rounded-full hover:scale-105`}>
+    <button
+      onClick={handleClick}
+      className={`bg-white ${
+        type === "primary" ? "px-8 py-2 font-bold" : "px-3 py-1 font-semibold"
+      } rounded-full hover:scale-105`}
+    >
       <span className="text-md text-black">{text}</span>
     </button>
   );
