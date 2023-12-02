@@ -15,8 +15,6 @@ const Card = ({ title, description, buttonText }: CardProps) => {
     setOpen(true);
   };
 
-  console.log(dialogOpen);
-
   return (
     <div className=" flex flex-col light-card items-start">
       <span className="font-semibold text-lg">{title}</span>
