@@ -3,14 +3,15 @@ import Image from "next/image";
 interface PlaylistCardProps {
   title: string;
   description: string;
+  image: string;
 }
 
-const PlaylistCard = ({ title, description }: PlaylistCardProps) => {
+const PlaylistCard = ({ title, description, image }: PlaylistCardProps) => {
   return (
     <div className="flex flex-col bg-black rounded-md w-[192px] p-4  gap-2 hover:cursor-pointer hover:bg-spotify-gray debug  ">
       <Image
       className="rounded-md"
-        src="/images/medrano.jpeg"
+        src={image}
         width={160}
         height={160}
         alt="Picture of the author"
