@@ -8,9 +8,9 @@ interface PlaylistCardProps {
 
 const PlaylistCard = ({ title, description, image }: PlaylistCardProps) => {
   return (
-    <div className="flex flex-col bg-black rounded-md w-[192px] p-4  gap-2 hover:cursor-pointer hover:bg-spotify-gray debug  ">
+    <div className="flex flex-col bg-black rounded-md w-[192px] p-4  gap-2 hover:cursor-pointer hover:bg-spotify-gray">
       <Image
-      className="rounded-md"
+        className="rounded-md"
         src={image}
         width={160}
         height={160}
