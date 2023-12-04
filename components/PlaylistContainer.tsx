@@ -12,7 +12,7 @@ interface PlaylistContainerProps {
 
 const PlaylistContainer = ({ title, data }: PlaylistContainerProps) => {
   return (
-    <section className="debug flex flex-col p-3 gap-4">
+    <section className="flex flex-col p-3 gap-4">
       <div className="flex justify-between ">
         <span className="text-white font-bold text-2xl">{title}</span>
         <span className="text-sm text-spotify-gray2 ">Show All</span>
@@ -20,11 +20,12 @@ const PlaylistContainer = ({ title, data }: PlaylistContainerProps) => {
       <div className="flex justify-around">
         {data.map((item) => {
           return (
-        <PlaylistCard key={item.id}
+            <PlaylistCard
+              key={item.id}
               title={item.title}
               description={item.description}
               image={item.image}
-        />
+            />
           );
         })}
       </div>
