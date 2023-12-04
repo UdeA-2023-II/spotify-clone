@@ -11,11 +11,16 @@ const PlaylistContainer = ({ title }: PlaylistContainerProps) => {
         <span className="text-white font-bold text-2xl">{title}</span>
         <span className="text-sm text-spotify-gray2 ">Show All</span>
       </div>
-      <div className="flex">
+      <div className="flex gap-4">
         <PlaylistCard
           title={`Today's Top Hits`}
           description={`Manuel Medrano, Kani Garcia, Piso 21 and more`}
-          // coverImage="https://seed-mix-image.spotifycdn.com/v6/img/twenty_tens/0i5iO6icb7kxg48thi9gBM/en/default"
+          image={"https://ing-web-spotify-media.s3.amazonaws.com/medrano.jpeg"}
+        />
+        <PlaylistCard
+          title={`Best of Rock: 1993`}
+          description={`Big rock tracks from 1993. Cover: Lenny Kravitz`}
+          image={"https://ing-web-spotify-media.s3.amazonaws.com/lk.jpeg"}
         />
       </div>
     </section>
