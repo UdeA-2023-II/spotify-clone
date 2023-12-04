@@ -15,12 +15,12 @@ const PlaylistContainer = ({ title }: PlaylistContainerProps) => {
         <PlaylistCard
           title={`Today's Top Hits`}
           description={`Manuel Medrano, Kani Garcia, Piso 21 and more`}
-          image={"/images/medrano.jpeg"}
+          image={"https://ing-web-spotify-media.s3.amazonaws.com/medrano.jpeg"}
         />
         <PlaylistCard
           title={`Best of Rock: 1993`}
           description={`Big rock tracks from 1993. Cover: Lenny Kravitz`}
-          image={"/images/lk.jpeg"}
+          image={"https://ing-web-spotify-media.s3.amazonaws.com/lk.jpeg"}
         />
       </div>
     </section>
