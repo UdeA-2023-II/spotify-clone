@@ -4,7 +4,7 @@ const Playlists = {
         id: "pl1",
         title: "Todays Top Hits",
         description: "Jung Kook is on top of the Hottest 50!",
-        image: "https://ingenieria-web-spotify-media.s3.amazonaws.com/todays-top-hits.jpg"
+        image: "https://ing-web-spotify-media.s3.amazonaws.com/todays-top-hits.jpg"
       },
       {
         id: "pl2",
@@ -36,6 +36,8 @@ const Playlists = {
         description: "Todays top Latin hits, elevando nuestra música. Cover: J Balvin",
         image: "https://ingenieria-web-spotify-media.s3.amazonaws.com/viva-latino.jpg"
       },
+    ],
+    focus: [
       {
         id: "pl7",
         title: "Peaceful Piano",

@@ -4,6 +4,7 @@ const nextConfig = {
   images: {
     domains: [
       'ing-web-spotify-media.s3.amazonaws.com',
+      'ingenieria-web-spotify-media.s3.amazonaws.com',
     ],
     
   },
