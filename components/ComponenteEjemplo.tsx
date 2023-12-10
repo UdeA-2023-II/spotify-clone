@@ -1,7 +1,5 @@
-function NuevoComponente() {
-  const nombre = 'Javier No usado';
-  console.log('Esto es un console log');
+const NuevoComponente = () => {
   return <div>Hola Mundo</div>;
-}
+};
 
-export default NuevoComponente;
+export { NuevoComponente };
